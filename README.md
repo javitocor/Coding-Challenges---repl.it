@@ -8,7 +8,7 @@
 
 ### Usage
 
-- Go to repl.it website and try to solve all the coding challenges in Ruby the programming language.
+- Go to repl.it website and try to solve all the coding challenges in Ruby programming language.
 
 ## Author
 
