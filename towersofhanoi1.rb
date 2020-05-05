@@ -1,4 +1,10 @@
- def move(starting, goal)
+  def move(starting, goal)
+    empty = [1, 2, 3]
+    empty.delete(starting)
+    empty.delete(goal)
+    "#{starting}->#{empty[0]} #{starting}->#{goal} #{empty[0]}->#{goal}"
+  end
+  def move(starting, goal)
     empty = [1, 2, 3]
     empty.delete(starting)
     empty.delete(goal)
