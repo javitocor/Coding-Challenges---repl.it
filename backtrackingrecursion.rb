@@ -1,6 +1,6 @@
 def exact_sum?(k, coins)
   return true if k == 0
-  return false if coins.empty?  
+  return false if coins.empty?
   exact_sum?(k - coins[0], coins[1..-1]) || exact_sum?(k, coins[1..-1])
 end
   
