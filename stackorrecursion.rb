@@ -6,10 +6,8 @@ def tree_height(tree_as_list)
         initial_height = height[i]
     
         left_next = (tree_as_list[2*i + 1] == 0 || tree_as_list[2*i + 1].nil?) ? 0 : (initial_height + 1)
-        #left_height = (left_next == 0) ? 0 : 
     
         right_next = (tree_as_list[2*i + 2] == 0 || tree_as_list[2*i + 2].nil?) ? 0 : (initial_height + 1)
-        #right_height = (right_next == 0) ? 0 : 
         height.push(left_next) 
         height.push(right_next) 
     end
