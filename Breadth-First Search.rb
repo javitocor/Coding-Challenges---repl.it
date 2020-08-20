@@ -1,17 +1,17 @@
 def bfs(graph)
-  discovered = Array.new(graph.keys.length, false)
+  discovered = []
   queue = []
   path = []
   
   queue.push(0)
-  discovered[0] = true
+  discovered.push(0);
   
   while !queue.empty?
     current = queue.shift
     path.push(current)
     graph[current].each do |node| 
-      if !discovered[node]
-        discovered[node] = true
+      if !discovered.include? node
+        discovered.push(node)
         queue.push(node)
       end
     end
